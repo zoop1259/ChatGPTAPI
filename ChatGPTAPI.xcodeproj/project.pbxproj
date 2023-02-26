@@ -7,18 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5AAB4FF298E4E79003C8997 /* DotLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB4FE298E4E79003C8997 /* DotLoadingView.swift */; };
+		C5AAB501298E4E9E003C8997 /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB500298E4E9E003C8997 /* MessageRowView.swift */; };
+		C5AAB503298E4EBA003C8997 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB502298E4EBA003C8997 /* ViewModel.swift */; };
+		C5AAB505298E4EC3003C8997 /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB504298E4EC3003C8997 /* MessageRow.swift */; };
+		C5AAB507298E4F29003C8997 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAB506298E4F29003C8997 /* APIKey.swift */; };
 		C5B628D1298D160A00C96C9C /* ChatGPTAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B628D0298D160A00C96C9C /* ChatGPTAPIApp.swift */; };
 		C5B628D3298D160A00C96C9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B628D2298D160A00C96C9C /* ContentView.swift */; };
 		C5B628D5298D160C00C96C9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B628D4298D160C00C96C9C /* Assets.xcassets */; };
 		C5B628D8298D160C00C96C9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B628D7298D160C00C96C9C /* Preview Assets.xcassets */; };
+		C5B628DF298D16B900C96C9C /* ChatGPTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B628DE298D16B900C96C9C /* ChatGPTAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C5AAB4FE298E4E79003C8997 /* DotLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotLoadingView.swift; sourceTree = "<group>"; };
+		C5AAB500298E4E9E003C8997 /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
+		C5AAB502298E4EBA003C8997 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C5AAB504298E4EC3003C8997 /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
+		C5AAB506298E4F29003C8997 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		C5B628CD298D160A00C96C9C /* ChatGPTAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B628D0298D160A00C96C9C /* ChatGPTAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTAPIApp.swift; sourceTree = "<group>"; };
 		C5B628D2298D160A00C96C9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C5B628D4298D160C00C96C9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5B628D7298D160C00C96C9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C5B628DE298D16B900C96C9C /* ChatGPTAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTAPI.swift; sourceTree = "<group>"; };
+		C5B628E0298D1F1A00C96C9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +64,17 @@
 		C5B628CF298D160A00C96C9C /* ChatGPTAPI */ = {
 			isa = PBXGroup;
 			children = (
+				C5B628E0298D1F1A00C96C9C /* Info.plist */,
 				C5B628D0298D160A00C96C9C /* ChatGPTAPIApp.swift */,
 				C5B628D2298D160A00C96C9C /* ContentView.swift */,
 				C5B628D4298D160C00C96C9C /* Assets.xcassets */,
 				C5B628D6298D160C00C96C9C /* Preview Content */,
+				C5B628DE298D16B900C96C9C /* ChatGPTAPI.swift */,
+				C5AAB4FE298E4E79003C8997 /* DotLoadingView.swift */,
+				C5AAB500298E4E9E003C8997 /* MessageRowView.swift */,
+				C5AAB502298E4EBA003C8997 /* ViewModel.swift */,
+				C5AAB504298E4EC3003C8997 /* MessageRow.swift */,
+				C5AAB506298E4F29003C8997 /* APIKey.swift */,
 			);
 			path = ChatGPTAPI;
 			sourceTree = "<group>";
@@ -137,8 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5B628DF298D16B900C96C9C /* ChatGPTAPI.swift in Sources */,
+				C5AAB507298E4F29003C8997 /* APIKey.swift in Sources */,
+				C5AAB501298E4E9E003C8997 /* MessageRowView.swift in Sources */,
 				C5B628D3298D160A00C96C9C /* ContentView.swift in Sources */,
 				C5B628D1298D160A00C96C9C /* ChatGPTAPIApp.swift in Sources */,
+				C5AAB505298E4EC3003C8997 /* MessageRow.swift in Sources */,
+				C5AAB503298E4EBA003C8997 /* ViewModel.swift in Sources */,
+				C5AAB4FF298E4E79003C8997 /* DotLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +296,7 @@
 				DEVELOPMENT_TEAM = YULBA58FUP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = ChatGPTAPI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -299,7 +325,7 @@
 				DEVELOPMENT_TEAM = YULBA58FUP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = ChatGPTAPI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
